@@ -1,6 +1,43 @@
 <head>
   <title>Jwix777</title>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="/assets/particles.js"></script>
 <body>
-  <h1> Hi. I am jwix777! <h1>
+  <div class='back' id="back">
+      <div class="hellodiv">
+          <h1 id="hello"> Hi. I am jwix777! <h1>
+          </div>
+  </div>
 </body>
+<script>
+particlesJS.load('back', 'assets/particles.json', function() {
+console.log('callback - particles.js config loaded');
+});
+</script>
+<style>
+  h1{
+      color: wheat;
+      font-family: 'Lato', sans-serif;
+  }
+  #hello{
+      position: absolute;
+      text-align: center;
+  }
+  .hellodiv{
+      width: 22%;
+      height: 50%;
+      border: 3px white;
+      position: absolute;
+      top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  }
+  body{
+      background-color: black;
+  }
+</style>
